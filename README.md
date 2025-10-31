@@ -3,7 +3,7 @@ A simple distributed caching system (redis lite) with load balancing.
 
 # System Architecture Diagrams
 
-![component diagram](distchace_diagram.png)
+![component diagram](docs/distchace_diagram.png)
 
 # Happy path : GET
 Client -> API Gateway -> Coordinator -> Cache Node -> Return Value
