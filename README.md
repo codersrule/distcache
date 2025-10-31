@@ -5,10 +5,10 @@ A simple distributed caching system (redis lite) with load balancing.
 
 ![component diagram](distchace_diagram.png)
 
-// Happy path : GET
+# Happy path : GET
 Client -> API Gateway -> Coordinator -> Cache Node -> Return Value
 
-// Node Failure 
+# Node Failure 
 Cache Node(stops heartbeat)  -> Coordinator (detects failure) -> Coordinator redistributes keys - > Keys reassigned to other nodes
 
 ## Future Improvements : TODO
